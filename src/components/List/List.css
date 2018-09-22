@@ -1,0 +1,46 @@
+.List {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 280px;
+}
+
+.ListItem {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #521751;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ListItem:hover,
+.ListItem:active {
+    background-color: #ccc;
+}
+
+.list-item-enter-active {
+    animation: fade-in 300ms ease-in;
+}
+.list-item-exit-active {
+    animation: fade-out 300ms ease-out;
+}
+
+@keyframes fade-out {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+@keyframes fade-in {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
